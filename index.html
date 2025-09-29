@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Pokédex</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="pokedex">
+        <header class="pokedex__header">
+            <h1 class="pokedex__title">Mini Pokédex</h1>
+            
+            <form class="pokedex__search-form" id="search-form">
+                <input 
+                    id="search-input"
+                    class="pokedex__search-input" 
+                    type="text" 
+                    placeholder="Buscar por nombre o ID"
+                />
+                <button class="pokedex__search-btn" type="submit">Buscar</button>
+            </form>
+            
+            <button class="pokedex__load-btn" id="load-initial-btn">Cargar Pokémon Iniciales</button>
+        </header>
+
+        <main class="pokedex__main">
+            <section id="pokemon-display" class="pokemon-display">
+                <p class="pokemon-display__message">Busca un Pokémon o carga la lista inicial para empezar.</p>
+            </section>
+        </main>
+
+        <section class="pokedex__favorites">
+            <h2 class="pokedex__favorites-title">Mis Favoritos</h2>
+            <div id="favorites-list" class="favorites-list">
+                <p class="favorites-list__message">Aún no tienes favoritos. ¡Añade algunos!</p>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
